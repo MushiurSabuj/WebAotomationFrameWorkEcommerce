@@ -125,7 +125,7 @@ public class BrowserDriver {
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
         // Open Browser with the Home Page
-        driver.get("https://www.cvs.com");
+        driver.get("http://the-internet.herokuapp.com/");
 
     }
 

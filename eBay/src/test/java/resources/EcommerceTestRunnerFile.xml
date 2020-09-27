@@ -10,13 +10,16 @@
     <parameter name="os_version" value="10"/>
     <parameter name="browserVersion" value="81.0"/>
     <parameter name="browserName" value="Chrome"/>
-    <parameter name="url" value="https://www.cvs.com"/>
+    <parameter name="url" value="http://the-internet.herokuapp.com/"/>
 
 <test name="Ecommerce Home">
     <classes>
-        <class name="pageObjectTest.StoreLocatorPageTest"/>
         <class name="pageObjectTest.HomePageTest"/>
-        <class name="pageObjectTest.SignInPageTest"/>
+        <class name="pageObjectTest.ContextMenuPageTest"/>
+        <class name="pageObjectTest.InPutPageTest"/>
+        <class name="pageObjectTest.FramePageTest"/>
+        <class name="pageObjectTest.FileUploadPageTest"/>
+        <class name="pageObjectTest.DropDownPageTest"/>
     </classes>
 
             <!--Hello-->

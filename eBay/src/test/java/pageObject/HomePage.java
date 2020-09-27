@@ -13,10 +13,10 @@ import reporting.TestLogger;
 public class HomePage {
     WebDriver driver = null;
 
-    @FindBy(how = How.ID, using = "searchbox")
-    WebElement searchBox;
+    @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/ul/li[1]/a")
+    WebElement landingPage;
 
-    @FindBy (how = How.CLASS_NAME, using = "locator desktop-only guest-locator ng-star-inserted")
+    /*@FindBy (how = How.CLASS_NAME, using = "locator desktop-only guest-locator ng-star-inserted")
     WebElement storeLocator;
 
     public void clickOnStore() {
@@ -30,8 +30,8 @@ public class HomePage {
         TestLogger.log("Page Title: " + pageTitle);
         return pageTitle;
 
-    }
+    }*/
     public void search(){
-        searchBox.sendKeys("water");
+        landingPage.sendKeys("");
     }
 }
